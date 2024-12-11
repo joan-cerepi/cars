@@ -202,6 +202,38 @@ footer {
   padding: 0.5rem;
 }
 
+/* *********************** LOGIN VIEW *********************** */
+.login-form {
+  width: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  line-height: 2;
+  background-color: lightblue;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.login-form input {
+  min-height: 44px;
+}
+
+.label-text {
+  display: block;
+}
+
+.submit-btn {
+  margin: 1rem auto 0 auto;
+  width: 25%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup {
+  margin: 2rem 0;
+  text-align: center;
+}
+
 /* Larger screen view */
 @media screen and (min-width: 64rem) {
   .top-header {
