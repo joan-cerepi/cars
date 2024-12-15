@@ -6,10 +6,18 @@
 
 <%- messages() %>
 
+<% if (errors) { %>
+    <ul class="notice">
+   <% errors.array().forEach(error => { %>
+     <li><%= error.msg %></li>
+  <%  }) %>
+   </ul>
+<% } %>
+
 <form action="/account/login" method="post" class="login-form">
     <label>
         <span class="label-text">Email:</span>
-        <input type="email" name="account_email" size="45" required>
+        <input type="email" name="account_email" size="45" required value="<%= locals.account_email %>">
     </label>
     <br>
     <label>
